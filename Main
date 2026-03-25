@@ -1,1 +1,31 @@
-index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carb Tracker</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <header>
+    <h1>Carb Tracker</h1>
+    <p>Track your meals and stay balanced</p>
+  </header>
+
+  <main>
+    <section class="input-section">
+      <input type="text" id="foodInput" placeholder="Enter food name"/>
+      <input type="number" id="calorieInput" placeholder="Calories"/>
+      <button onclick="addEntry()">Add</button>
+    </section>
+
+    <section class="list-section">
+      <h2>Today's Entries</h2>
+      <ul id="foodList"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
